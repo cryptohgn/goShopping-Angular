@@ -1,0 +1,4 @@
+<div class="card w-75 text-center p-3 row m-3">{{ProdCard.titulo}} {{ProdCard.cantidad}} {{ProdCard.precio}}
+<button class="btn btn-info w-25 align-self-center m-3" (click)="enviarProdToList(ProdCard)">Comprar</button>
+<button class="btn btn-danger w-25 align-self-center m-3" (click)="enviarProdAEliminar(ProdCard.id)">Eliminar</button>
+</div>

@@ -1,0 +1,3 @@
+{{miProducto.titulo}} - {{miProducto.precio}} - {{miProducto.cantidad}} -
+<button *ngIf="!miProducto.comprado" (click)="comprar(miProducto)">Comprar</button>
+<button *ngIf="!miProducto.comprado" (click)="eliminar(miProducto.id)">Eliminar</button>

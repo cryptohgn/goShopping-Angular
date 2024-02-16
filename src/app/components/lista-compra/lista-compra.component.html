@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let producto of listaProductos">
+    <app-producto [miProducto]="producto" (productoEliminado)="pasarIdApp($event)" (productoComprado)="pasarProductApp($event)"></app-producto>
+  </li>
+</ul>

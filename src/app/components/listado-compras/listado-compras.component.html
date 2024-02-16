@@ -1,0 +1,5 @@
+<ul>
+    <li class="list-group-item" *ngFor="let product of envioArrProducts">
+       <app-card-product [ProdCard]="product" (productoComprado)="enviarProdAppComp(product)" (productoAEliminar)="enviarProdEleminar($event)"></app-card-product>
+    </li>
+</ul>

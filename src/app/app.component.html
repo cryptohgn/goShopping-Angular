@@ -1,0 +1,39 @@
+<header>
+  <h1>Lista Compra</h1>
+  <hr>
+</header>
+<main class="container">
+  <section class="row">
+    <article class="col-sm mt-5" >
+      <h2>Listado necesidades</h2>
+    <app-listado-compras [envioArrProducts]="arrProductos" (productoComprado)="addProdArrPComprados($event)" (productoEliminado)="removeArrProduct($event)"></app-listado-compras>
+    </article>
+  <article class="col-sm mt-5">
+   <h2>Listado comprados</h2>
+   <app-comprados-list [envioArrProdComprados]="arrProdComprados" (productoEliminado)="removeArrProduct($event)"></app-comprados-list>
+   <app-total-comprados [envioCantisPrecio]="arrProdComprados"></app-total-comprados>
+   </article>
+  </section>
+
+</main>
+
+<!-- <header>
+  <h1>Lista Compra</h1>
+  <hr>
+</header>
+<main class="flex">
+  <section>
+    aqui va la lista de la compra -->
+    <!-- <h2>Listado necesidades</h2>
+    <app-lista-compra [listaProductos]="arrProductos" (productoEliminado)="eliminar($event)" (productoComprado)="comprar($event)"></app-lista-compra>
+  </section>
+  <section> -->
+    <!-- aqui va la lista de productos compradso -->
+    <!-- <h2>Listado comprados</h2>
+    <app-lista-compra [listaProductos]="arrProductoComprados"></app-lista-compra>
+    <div class="total">
+      <app-total [listaProductos]="arrProductoComprados"></app-total>
+    </div>
+  </section>
+
+</main> -->
